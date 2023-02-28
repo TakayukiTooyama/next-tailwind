@@ -1,0 +1,17 @@
+{
+  // Next.js13の強制設定
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  // tsconfig.jsonに構成されているbseUrl, pathsに基づいて非相対インポートを優先させる設定
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  // ESLint, Prettierの設定
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.fixAll.eslint"
+  ],
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
